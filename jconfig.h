@@ -8,10 +8,10 @@
 #define LIBJPEG_TURBO_VERSION 1.2.80
 
 /* Support arithmetic encoding */
-/* #undef C_ARITH_CODING_SUPPORTED */
+#define C_ARITH_CODING_SUPPORTED
 
 /* Support arithmetic decoding */
-/* #undef D_ARITH_CODING_SUPPORTED */
+#define D_ARITH_CODING_SUPPORTED
 
 /* Define if your compiler supports prototypes */
 #define HAVE_PROTOTYPES 1

@@ -31,6 +31,11 @@
 #include <sys/types.h>
 #include "./md5.h"
 
+
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 int main(int argc, char *argv[])
 {
 	char *md5sum = NULL, buf[65];

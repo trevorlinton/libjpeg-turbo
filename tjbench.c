@@ -26,6 +26,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#ifdef TARGET_EMSCRIPTEN
+#error "main defined on JS build, this file should not have been linked or compiled."
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
